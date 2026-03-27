@@ -18,7 +18,7 @@ function broadcast(msg) {
 }
 
 function broadcastGameState(msg_type) {
-    const playerList = Array.from(players.value())
+    const playerList = Array.from(players.values())
 
     broadcast({
         type: msg_type,
